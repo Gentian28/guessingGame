@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Number guessing game</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script defer src="app.js"></script>
 </head>
@@ -19,18 +21,28 @@
     <main id="main">
         <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell
             you if your guess was too high or too low.</p>
-        <form action="">
-            <label for="">Enter a guess:</label>
-            <input type="text" id="guessed-number">
-            <button type="button" id="submit-guess">Submit guess</button>
+
+        <form>
+            <div class="form-row align-items-center">
+                <div class="col-auto">
+                    <label for="guessed-number">Enter a guess: </label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" class="form-control" id="guessed-number">
+                </div>
+                <div class="col-auto">
+                    <button type="button" class="btn btn-primary" id="submit-guess">Submit guess</button>
+                </div>
+            </div>
         </form>
+
         <div id="guess-list">
             <span>Previows guesses: </span>
             <span id="guessed-numbers-list"></span>
         </div>
         <div id="message"></div>
         <div id="hint"></div>
-        <button type="button" id="new-game">Start new game</button>
+        <button type="button" id="new-game" class="btn btn-primary">Start new game</button>
     </main>
 
     <footer id="footer">

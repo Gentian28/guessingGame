@@ -6,7 +6,7 @@
 body { 
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 1rem;
     height: 100vh;
     max-width: 600px;
     margin: auto;
@@ -23,7 +23,7 @@ ul, ol {
     padding: 0;
     margin: 0;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, label {
     margin: 0;
 }
 p {
