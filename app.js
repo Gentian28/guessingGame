@@ -57,7 +57,6 @@ submitGuessedNumber.onclick = () => {
         hint.innerHTML = '';
         newGameBtn.style.display = 'block';
     }
-    console.log(guessingGame)
 
 }
 
